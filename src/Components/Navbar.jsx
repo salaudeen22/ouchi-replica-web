@@ -35,6 +35,7 @@ function Navbar() {
         {["Service", "Our works", "About us", "Insight", "Contact"].map(
           (item, index) => {
             return (
+   
               <a
                 href="/"
                 key={index}
@@ -44,6 +45,7 @@ function Navbar() {
               >
                 {item}
               </a>
+             
             );
           }
         )}
