@@ -1,4 +1,5 @@
 import About from "./Components/About";
+import Eye from "./Components/Eye";
 import Landingpage from "./Components/Landingpage";
 import Marquee from "./Components/Marquee";
 import Navbar from "./Components/Navbar";
@@ -10,6 +11,7 @@ function App() {
       <Landingpage/>
       <Marquee/>
       <About/>
+      <Eye/>
      
     </div>
   );
