@@ -1,6 +1,7 @@
 
 
 function Cards() {
+
   return (
     <div className="w-full h-screen bg-zinc-900 flex items-center px-32 gap-5">
         <div className="cardconatiner h-[50vh] w-1/2">

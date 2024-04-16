@@ -1,10 +1,15 @@
-
-
-function Navbar() {
-
+function Footer() {
   return (
-    <div className="fixed z-[999] w-full px-20 py-8 flex justify-between align-center font-[Neue Montreal] ">
-      <div className="logo">
+    <div className="w-full h-screen bg-zinc-900 p-20 flex gap-5">
+      <div className="w-1/2 h-full flex flex-col justify-between">
+        <div className="heading">
+          <h1 className="text-[10vw]  font-['Founders Grotesk X-Condensed']  leading-none  -mb-5 font-semibold">
+            EYE-
+          </h1>
+          <h1 className="text-[10vw]  font-['Founders Grotesk X-Condensed']  leading-none  -mb-5 font-semibold">
+            OPENING
+          </h1>
+        </div>
         <svg
           width="72"
           height="30"
@@ -34,27 +39,18 @@ function Navbar() {
           ></path>
         </svg>
       </div>
-      <div className="links flex gap-10">
-        {["Service", "Our works", "About us", "Insight", "Contact"].map(
-          (item, index) => {
-            return (
-   
-              <a
-                href="/"
-                key={index}
-                className={`text-lg capitalize font-light ${
-                  index === 4 ? "ml-[8rem]" : ""
-                }`}
-              >
-                {item}
-              </a>
-             
-            );
-          }
-        )}
+      <div className="w-1/2">
+        <h1 className="text-[5vw]  font-['Founders Grotesk X-Condensed']  leading-none   font-semibold">
+          PRESENTATIONS
+        </h1>
+        <div className="details font-['Neue_Montreal'] mt-10">
+          <a className="block text-2xl font-light " href="#">Facebook</a>
+          <a className="block text-2xl font-light " href="#">Instagram</a>
+          <a className="block text-2xl font-light " href="#">Twitter</a>
+        </div>
       </div>
     </div>
   );
 }
 
-export default Navbar;
+export default Footer;
