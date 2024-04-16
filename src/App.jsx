@@ -1,5 +1,7 @@
 import About from "./Components/About";
+import Cards from "./Components/Cards";
 import Eye from "./Components/Eye";
+import Feature from "./Components/Feature";
 import Landingpage from "./Components/Landingpage";
 import Marquee from "./Components/Marquee";
 import Navbar from "./Components/Navbar";
@@ -12,6 +14,8 @@ function App() {
       <Marquee/>
       <About/>
       <Eye/>
+      <Feature/>
+      <Cards/>
      
     </div>
   );
