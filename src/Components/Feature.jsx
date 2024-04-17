@@ -17,10 +17,10 @@ function Feature() {
   return (
     <div className="w-full py-10">
       <div className="w-full px-10 border-b-[1px] border-zinc-700 pb-20">
-        <h1 className="text-7xl tracking-tight">Featured projects</h1>
+        <h1 className="text-3xl sm:text-7xl tracking-tight">Featured projects</h1>
       </div>
       <div className="px-20">
-        <div className="flex gap-10 cards w-full mt-10">
+        <div className="feature-card flex gap-10 cards w-full mt-10">
           <motion.div
             onHoverStart={() => {
               handleHover(0);
@@ -28,7 +28,7 @@ function Feature() {
             onHoverEnd={() => {
               handleHoverEnd(0);
             }}
-            className="relative cardcontainer  w-1/2 h-[75vh]"
+            className="relative cardcontainer  sm:w-1/2 sm:h-[75vh]"
           >
             <h1 className="absolute flex right-0 overflow-hidden translate-x-1/2 top-1/2 -translate-y-1/2 text-[#CDEA67] font-['Founders Grotesk X-Condensed'] font-semibold z-[9] tracking-tighter leading-none text-8xl">
               {"FYDE".split("").map((item, index) => (

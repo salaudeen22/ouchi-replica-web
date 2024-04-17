@@ -7,6 +7,7 @@ import Landingpage from "./Components/Landingpage";
 import Marquee from "./Components/Marquee";
 import Navbar from "./Components/Navbar";
 import LocomotiveScroll from "locomotive-scroll";
+import "./App.css"
 
 function App() {
   const locomotiveScroll = new LocomotiveScroll();

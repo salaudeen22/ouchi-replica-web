@@ -26,7 +26,7 @@ function Eye() {
               <div style={{
                 transform:`translate(-50%,-50%) rotate(${rotate}deg)`
               }} className="line absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%] w-full h-10">
-                <div className="w-10 h-10 rounded-full bg-zinc-100"></div>
+                <div className="w-5 h-5 sm:w-10 sm:h-10 rounded-full bg-zinc-100"></div>
               </div>
             </div>
           </div>
@@ -35,7 +35,7 @@ function Eye() {
             <div style={{
                 transform:`translate(-50%,-50%) rotate(${rotate}deg)`
               }} className="line absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%] w-full h-10">
-                <div className="w-10 h-10 rounded-full bg-zinc-100"></div>
+                <div className="w-5 h-5 sm:w-10 sm:h-10 rounded-full bg-zinc-100"></div>
               </div>
             </div>
           </div>

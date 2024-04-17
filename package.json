@@ -10,12 +10,17 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.2",
+    "@fortawesome/free-solid-svg-icons": "^6.5.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@fortawesome/react-native-fontawesome": "^0.3.0",
     "framer-motion": "^11.1.1",
     "gsap": "^3.12.5",
     "locomotive-scroll": "^5.0.0-beta.11",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^5.0.1"
+    "react-icons": "^5.0.1",
+    "react-native-svg": "^15.1.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",

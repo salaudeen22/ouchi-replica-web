@@ -1,11 +1,18 @@
-
+import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 function Navbar() {
+  const [showMenu, setShowMenu] = useState(false);
+
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
 
   return (
-    <div className="fixed z-[999] w-full px-20 py-8 flex justify-between align-center font-[Neue Montreal] ">
+    <div className="navbar fixed z-[999] w-full sm:px-20 sm:py-8 flex justify-between align-center font-[Neue Montreal]">
       <div className="logo">
-        <svg
+      <svg
           width="72"
           height="30"
           viewBox="0 0 72 30"
@@ -34,23 +41,25 @@ function Navbar() {
           ></path>
         </svg>
       </div>
-      <div className="links flex gap-10">
+      <FontAwesomeIcon
+        icon={faBars}
+        className="bar block sm:hidden md:hidden"
+        onClick={toggleMenu}
+      />
+
+      <div className={`links sm:flex sm:gap-10 ${showMenu ? "block" : "hidden"}`}>
         {["Service", "Our works", "About us", "Insight", "Contact"].map(
-          (item, index) => {
-            return (
-   
-              <a
-                href="/"
-                key={index}
-                className={`text-lg capitalize font-light ${
-                  index === 4 ? "ml-[8rem]" : ""
-                }`}
-              >
-                {item}
-              </a>
-             
-            );
-          }
+          (item, index) => (
+            <a
+              href="/"
+              key={index}
+              className={`sm:text-lg capitalize font-light ${
+                index === 4 ? "sm:ml-[8rem]" : ""
+              }`}
+            >
+              {item}
+            </a>
+          )
         )}
       </div>
     </div>
