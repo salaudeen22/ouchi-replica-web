@@ -9,7 +9,7 @@ function About() {
       <h1 className="font-['Neue_Montreal'] text-[4vw] leading-[4.5vw] tracking-tight">
         Ochi is a strategic partner for fast-growing tech businesses that need to raise funds, sell products, explain complex ideas, and hire great people.
       </h1>
-      <div className="flex-col w-full border-t-[2px] mt-20 pt-10 border-bg-[#a0b84c]">
+      <div className="flex md:flex-row flex-col w-full border-t-[2px] mt-20 pt-10 border-bg-[#a0b84c]">
         <div className="w-1/2">
           <h1 className="text-3xl sm:text-6xl">Our approach</h1>
           <motion.button
@@ -23,7 +23,7 @@ function About() {
           </motion.button>
         </div>
         <motion.div 
-          transition={{ duration: 0.1, ease: [0.12, 0, 0.39, 0] }} // Adjust duration and ease
+          transition={{ duration: 0.1, ease: [0.12, 0, 0.39, 0] }} 
           className={`mt-10 w-full h-full sm:w-1/2 sm:h-[70vh] ${animation ? 'scale-90' : ''}`}
         >
           <img src="https://ochi.design/wp-content/uploads/2022/05/Homepage-Photo-1326x939.jpg" alt="" className="rounded-3xl w-full h-full" />

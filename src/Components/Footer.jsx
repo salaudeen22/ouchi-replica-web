@@ -1,12 +1,12 @@
 function Footer() {
   return (
-    <div className="w-full h-screen bg-zinc-900 p-20 flex gap-5">
-      <div className="w-1/2 h-full flex flex-col justify-between">
+    <div className="relative footer w-full h-screen bg-zinc-900 p-20 flex flex-row md:flex-row gap-5">
+      <div className="md:w-1/2 md:h-full flex flex-col justify-between">
         <div className="heading">
-          <h1 className="text-[10vw]  font-['Founders Grotesk X-Condensed']  leading-none  -mb-5 font-semibold">
+          <h1 className="text-[10vw]  font-['Founders Grotesk X-Condensed']  leading-none  sm:-mb-5 font-semibold">
             EYE-
           </h1>
-          <h1 className="text-[10vw]  font-['Founders Grotesk X-Condensed']  leading-none  -mb-5 font-semibold">
+          <h1 className="text-[10vw]  font-['Founders Grotesk X-Condensed']  leading-none  sm:-mb-5 font-semibold">
             OPENING
           </h1>
         </div>
@@ -39,7 +39,7 @@ function Footer() {
           ></path>
         </svg>
       </div>
-      <div className="w-1/2">
+      <div className="absolute left-0 top-[30%] md:static  md:w-1/2">
         <h1 className="text-[5vw]  font-['Founders Grotesk X-Condensed']  leading-none   font-semibold">
           PRESENTATIONS
         </h1>

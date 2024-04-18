@@ -20,7 +20,7 @@ function Feature() {
         <h1 className="text-3xl sm:text-7xl tracking-tight">Featured projects</h1>
       </div>
       <div className="px-20">
-        <div className="feature-card flex gap-10 cards w-full mt-10">
+        <div className="feature-card flex flex-col md:flex-row  gap-10 cards w-full mt-10">
           <motion.div
             onHoverStart={() => {
               handleHover(0);

@@ -39,15 +39,16 @@ function Landingpage() {
                     />
                   </motion.div>
                 )}
-                <h1 className=" uppercase text-[9vw]  sm:text-[9vw] md:text-[9vw] md:leading-[7vw]  font-['Founders Grotesk X-Condensed']  font-bold">
+                <h1 className=" uppercase text-[9vw]  md:text-[9vw]  md:leading-[7vw]  font-['Founders Grotesk X-Condensed']  font-bold">
                   {item}
                 </h1>
               </div>
             </div>
           );
         })}
+    
       </div>
-      <div className="menus border-t-2 mt-32 border-zinc-800 sm:flex sm:justify-between sm:items-center py-5 sm:px-20">
+      <div className="md:static menus md:flex md:flex-row md:justify-between md:items-center md:px-20 flex-col px-5 justify-center border-t-2 mt-32 border-zinc-800 text-1xl  py-5 ">
         {[
           "For public and private companies",
           "From the first pitch to IPO",
@@ -55,7 +56,7 @@ function Landingpage() {
           return (
             <p
               key={index}
-              className="menus-items text-md font-light tracking-tight leading-none"
+              className="menus-items md:p-0 text-md font-light tracking-tight leading-none p-4"
             >
               {item}
             </p>

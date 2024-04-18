@@ -1,16 +1,20 @@
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons"; // Import faTimes for the close icon
 
 function Navbar() {
-  const [showMenu, setShowMenu] = useState(false);
+  const [showMenu, setShowMenu] = useState(true);
 
   const toggleMenu = () => {
-    setShowMenu(!showMenu);
+  
+      setShowMenu(!showMenu);
+    
   };
+  
+  
 
   return (
-    <div className="navbar fixed z-[999] w-full sm:px-20 sm:py-8 flex justify-between align-center font-[Neue Montreal]">
+    <div className="fixed z-[999] md:`{setShowMenu(true)}` w-full px-5 py-4 md:px-20 md:py-8 flex justify-between items-center font-[Neue Montreal]">
       <div className="logo">
       <svg
           width="72"
@@ -40,28 +44,24 @@ function Navbar() {
             fill="currentColor"
           ></path>
         </svg>
+
+      </div>
+      <div className={`md:static absolute md:min-h-fit md:flex-row  md:gap-10 md:bg-transparent md:text-white md:w-auto bg-white text-black min-h-[40vh] left-0 ${showMenu ? "top-[9vh]" : "top-[-60vh]"} w-full items-center px-5 links flex flex-col  gap-8 ${showMenu ? "block" : "hidden"}`}>
+        {["Service", "Our works", "About us", "Insight", "Contact"].map((item, index) => (
+          <a
+            href="/"
+            key={index}
+            className={`text-lg md:items-center capitalize font-light ${index === 4 ? "md:ml-[8rem]" : ""}`}
+          >
+            {item}
+          </a>
+        ))}
       </div>
       <FontAwesomeIcon
-        icon={faBars}
-        className="bar block sm:hidden md:hidden"
+        icon={showMenu ? faTimes : faBars} 
+        className="bar px-4 cursor-pointer md:hidden"
         onClick={toggleMenu}
       />
-
-      <div className={`links sm:flex sm:gap-10 ${showMenu ? "block" : "hidden"}`}>
-        {["Service", "Our works", "About us", "Insight", "Contact"].map(
-          (item, index) => (
-            <a
-              href="/"
-              key={index}
-              className={`sm:text-lg capitalize font-light ${
-                index === 4 ? "sm:ml-[8rem]" : ""
-              }`}
-            >
-              {item}
-            </a>
-          )
-        )}
-      </div>
     </div>
   );
 }
